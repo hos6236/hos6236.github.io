@@ -14,18 +14,18 @@ theme_settings:
   header_text: >
      <p>This course provides theory, methods and procedures required to apply molecular information in plant breeding programs. The course will be based on lectures and multiple hands-on activities that apply what is learned..</p>
 
-     <p>Instructors- Patricio Munoz</p>
+     <p>Instructor- Patricio Munoz</p>
      
-     <p>Instructors- Marcio Resende</p>
+     <p>Instructor- Marcio Resende</p>
      
-     <p>Instructors- Kevin Folta </p>
+     <p>Instructor- Kevin Folta </p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "lfelipe.ferrao@gmail.com"
+  email_address: "lfelipe.ferrao@gmail.com"
   behance:
   bitbucket:
   dribbble:
