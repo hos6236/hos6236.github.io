@@ -5,7 +5,7 @@ url: "http://example.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
+  title: HOS 6236 Molecular Marker Assisted Plant Breeding
   avatar: uf.png
   gravatar: # Email MD5 hash
   description: "HOS 6236 Molecular Marker Assisted Plant Breeding" # used by search engines
