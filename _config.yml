@@ -1,20 +1,24 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+url: "https://lfelipe-ferrao.github.io/" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
+  title: HOS 6236 Molecular Marker Assisted Plant Breeding (Graduate Level – 3 credit hours)
   avatar: avatar.png
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     <p>This course provides theory, methods and procedures required to apply molecular information in plant breeding programs. The course will be based on lectures and multiple hands-on activities that apply what is learned..</p>
 
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+     <p>Instructors- Patricio Munoz</p>
+     
+     <p>Instructors- Marcio Resende</p>
+     
+     <p>Instructors- Kevin Folta </p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
