@@ -54,7 +54,7 @@ the relative spacing that they still appear on the standard maps"
 
 The complete tutorial to build a linkage map for inbred-based populations (F2, RIL and BC) and for outcrossing populations can be accessed by these links ([F2 population](http://augustogarcia.me/onemap/vignettes_highres/Inbred_Based_Populations.html#combining-onemap-objects) and [outcrossing](http://augustogarcia.me/onemap/vignettes_highres/Outcrossing_Populations.html)). Please, check these tutorials. They have described the main concepts necessary to build a good linkage map. Based on these tutorials, a reduced version  was prepared by Ivone de Bem Oliveira and can be accessed using this link ([reduced version](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_4.pdf)). 
 
-## Evaluation - Partial project (by Ivone de Bem Oliveira)
+### Partial project (by Ivone de Bem Oliveira)
 
 Files for the first project can be downloaded [here](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_exer.zip).
 
