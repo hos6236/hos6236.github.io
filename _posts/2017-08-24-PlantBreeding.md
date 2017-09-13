@@ -36,7 +36,7 @@ title: Plant Breeding and Molecular Marker
 ### Books
 
 - Linear Models for the Prediction of Animal Breeding Values 3rd Edition
-by Raphael A. Mrode (Author) - *Important concept about linear mixed effects*
+by Raphael A. Mrode (Author) - *Important concepts about linear mixed effects*
 
 - Introduction to Quantitative Genetics (4th Edition) 4th Edition
 by Douglas S. Falconer (Author), Trudy F.C. Mackay (Author) - *Reference book for the understanding of methods and concepts in quantitative genetics*
@@ -67,7 +67,7 @@ by Douglas S. Falconer (Author), Trudy F.C. Mackay (Author) - *Reference book fo
 
 - SNP chips
 
-### Slide
+### Slides
 
 1. [Molecular Markers](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/plant_breeding_4.pdf)
 
