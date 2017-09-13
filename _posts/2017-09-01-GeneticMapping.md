@@ -3,7 +3,6 @@ layout: post
 title: Linkage Mapping
 ---
 
-
 "In 1909, the only time during his twenty–four years at Columbia,
 Morgan gave the opening lectures in the undergraduate course in
 beginning zoology. It so happened that C. B. Bridges and I were both
