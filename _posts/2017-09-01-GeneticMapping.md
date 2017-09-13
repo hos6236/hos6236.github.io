@@ -19,7 +19,7 @@ sequences in the linear dimension of a chromosome. I went home and
 spent most of the night (to the neglect of my undergraduate
 homework) in producing the first chromosome map, which included
 the sex–linked genes y, w, v, m, and r, in the order and approximately
-the relative spacing that they still appear on the standard maps"
+the relative spacing that they still appear on the standard map"
 
 `Sturtevant, 1913`
 
