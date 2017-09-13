@@ -3,6 +3,30 @@ layout: post
 title: Linkage Mapping
 ---
 
+
+"In 1909, the only time during his twenty–four years at Columbia,
+Morgan gave the opening lectures in the undergraduate course in
+beginning zoology. It so happened that C. B. Bridges and I were both
+in the class. While genetics was not mentioned, we were both
+attracted to Morgan and were fortunate enough, though both still
+undergraduates, to be given desks in his laboratory the following year
+(1910–1911). The possibilities of the genetic study of Drosophila
+were then just beginning to be apparent; we were at the right place at
+the right time. … In the latter part of 1911, in conversation with
+Morgan … I suddenly realized that the variations in strength of
+linkage, already attributed by Morgan to differences in the spatial
+separation of the genes, offered the possibility of determining
+sequences in the linear dimension of a chromosome. I went home and
+spent most of the night (to the neglect of my undergraduate
+homework) in producing the first chromosome map, which included
+the sex–linked genes y, w, v, m, and r, in the order and approximately
+the relative spacing that they still appear on the standard maps"
+
+`Sturtevant, 1913`
+
+-------------------------------------------
+
+
 ## Concepts
 
 - What are linkage maps?

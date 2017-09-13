@@ -3,6 +3,11 @@ layout: post
 title: R tutorial
 ---
 
+I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples' ideas and making it into what science is today and the incredible advances that we have had. And I compare that to witchcraft and alchemy, where openness was something you didn't do.
+
+`Linus Torvalds`
+
+----------------------------------
 ## What is R ?
 
 R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues. R can be considered as a different implementation of S. There are some important differences, but much code written for S runs unaltered under R.
@@ -19,7 +24,7 @@ Please, use this [link](https://cran.r-project.org/manuals.html) to get some R o
 
 ## Introduction to R (by Marcio Resende)
 
-Files for the hands-on R tutorial can bse accessed in this [link](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/Hands-on.zip)
+Files for the hands-on R tutorial can be accessed in this [link](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/Hands-on.zip)
 
 ### As a calculator
 
