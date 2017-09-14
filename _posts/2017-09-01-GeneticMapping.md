@@ -21,7 +21,7 @@ homework) in producing the first chromosome map, which included
 the sex–linked genes y, w, v, m, and r, in the order and approximately
 the relative spacing that they still appear on the standard maps"
 
-`Sturtevant, 1913`
+`Sturtevant`-  author of the first genetic map of a chromosome in 1913.
 
 -------------------------------------------
 
