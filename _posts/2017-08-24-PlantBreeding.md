@@ -5,7 +5,7 @@ title: Plant Breeding and Molecular Marker
 
 "When the Nobel Peace Prize Committee designated me the recipient of the 1970 award for my contribution to the 'green revolution,' they were in effect, I believe, selecting an individual to symbolize the vital role of agriculture and food production in a world that is hungry, both for bread and for peace."
 
-`Norman Borlaug`
+`Norman Borlaug`- agronomist and awarded multiple honors for his work, including the Nobel Peace Prize.
 
 -----------------------------------------
 
