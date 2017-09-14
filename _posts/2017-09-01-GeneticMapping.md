@@ -48,6 +48,8 @@ the relative spacing that they still appear on the standard maps"
 
 4. [LOD score, a toy example](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_5.pdf)
 
+4. [Linkage phase and introduction to QTL mapping](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_6.pdf)
+
 ## Onemap
 
 ``OneMap`` is a software for constructing genetic maps in experimental crosses: full-sib, RILs, F2 and backcrosses. This [github page](https://github.com/augusto-garcia/onemap) has its version under development. New functions will be added (experimental work) and, once it is done, the authors will synchronize the repositories and add it to CRAN. 
