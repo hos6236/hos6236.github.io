@@ -25,11 +25,11 @@ title: Plant Breeding and Molecular Marker
 
 ### Slides
 
-1. [Breeding concepts](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/plant_breeding_1.pdf)
+1. [Breeding concepts](https://github.com/hos6236/hos6236.github.io/blob/master/classes/plant_breeding_1.pdf)
 
-2. [Plant breeding methods](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/plant_breeding_2.pdf)
+2. [Plant breeding methods](https://github.com/hos6236/hos6236.github.io/blob/master/classes/plant_breeding_2.pdf)
 
-3. [Breeding value prediction and BLUP](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/plant_breeding_3.pdf)
+3. [Breeding value prediction and BLUP](https://github.com/hos6236/hos6236.github.io/blob/master/classes/plant_breeding_3.pdf)
 
 ## References
 
