@@ -81,7 +81,7 @@ Disadvantages:
 
  ### Multiple Interval Mapping (MIM)
 
- All previous methods have considered the follow question: "Is there a QTL here ?". For this, single marker analysis considered each marker individually, the SIM method considered a similar regression model but considering prior linkage mapping information and CIM approach fitted a multiple regression model assuming neighboring markers as covariates. An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method.Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ".
+All previous methods have considered the follow question: "Is there a QTL here ?". For this, single marker analysis considered  each marker individually, the SIM method considered a similar regression model but considering prior linkage mapping information and CIM approach fitted a multiple regression model assuming neighboring markers as covariates. An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method.Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ".
 
  Advantages:
 1. Combines high precision and statistical power
