@@ -25,7 +25,7 @@ title: QTL Mapping
 
 ## Slides
 
-1. [Introduction to QTL analysis.](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/QTLmapping_2.pdf)
+1. [Introduction to QTL analysis.](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_1.pdf)
 
 ## R/qtl package
 
