@@ -79,7 +79,7 @@ Disadvantages:
 
  1. Inefficient to model more complex scenarios considering interaction effects.
 
- ### Multiple Interval Mapping (MIM)
+### Multiple Interval Mapping (MIM)
 
 All previous methods have considered the follow question: "Is there a QTL here ?". For this, single marker analysis considered  each marker individually, the SIM method considered a similar regression model but considering prior linkage mapping information and CIM approach fitted a multiple regression model assuming neighboring markers as covariates. An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method.Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ".
 
@@ -99,7 +99,7 @@ Below is presented the ``R/qtl`` codes discussed during the class. Some importan
 
 - Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a tiny number of permutation given the time. In a real analysis, you should increase it.
 
-- QTL effects is an important information. In the  `R/qtl` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple-QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the [discussion group](https://groups.google.com/forum/#!searchin/rqtl-disc/CIM$20qtl$20effect|sort:relevance/rqtl-disc/rD8R66fxaMU/T4QsbYrWAwAJ). He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." **In this toy example, we will consider this alternative to get the QTL effects.**
+- QTL effects is an important information. In the  `R/qtl` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the [discussion group](https://groups.google.com/forum/#!searchin/rqtl-disc/CIM$20qtl$20effect|sort:relevance/rqtl-disc/rD8R66fxaMU/T4QsbYrWAwAJ). He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." **In this toy example, we will consider this alternative to get the QTL effects.**
 
 ```
 require('qtl')
