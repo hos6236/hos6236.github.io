@@ -29,11 +29,11 @@ title: QTL Mapping
 
 ## R/qtl package
 
-by `Luis Felipe V. Ferrão`
+by ``Luis Felipe V. Ferrão``
 
- In this section, we pointed out four  QTL mapping methods implemented in the `R/qtl` package. They have been widely used in the last decade in animal, plant and human research.  Exception the Single Marker Analysis approach, all interval mapping methods require the prior establishment of a linkage genetic map (linking the concepts discussed in the last class about the importance of linkage mapping).
+ In this section, we pointed out four  QTL mapping methods implemented in the ``R/qtl`` package. They have been widely used in the last decade in animal, plant and human research.  Exception the Single Marker Analysis approach, all interval mapping methods require the prior establishment of a linkage genetic map (linking the concepts discussed in the last class about the importance of linkage mapping).
 
- In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) is possible to access a short `R/qtl` tutorial created by Ivone de Bem Oliveira. Please, use this material as a reference to guide you in the exercises. If you want to get more in deep into this topic, be sure to access the material signed by **Karl Bromam**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there are further information.
+ In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) is possible to access a short ``R/qtl`` tutorial created by Ivone de Bem Oliveira. Please, use this material as a reference to guide you in the exercises. If you want to get more in deep into this topic, be sure to access the material signed by **Karl Bromam**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there are further information.
 
 Below, a brief report about the methods discussed in class.
 
@@ -44,7 +44,7 @@ genotypes at the marker, and compare the groups’ phenotype averages.
 
 Advantages:
 1. The key advantage of marker regression is its simplicity: we just perform a t test or ANOVA at each marker.
-2. No special software is required (`lm` function in R can be used).
+2. No special software is required (``lm`` function in R can be used).
 3. Does not need a previous linkage genetic map.
 4. Can be applied to non-linked markers.
 5. Theoretical basis of the genome-wide association studies (GWAS).
@@ -91,15 +91,15 @@ All previous methods have considered the follow question: "Is there a QTL here ?
 
 ### Toy example
 
-Below is presented the `R/qtl` codes discussed during the class. Some important points:
+Below is presented the ``R/qtl`` codes discussed during the class. Some important points:
 
--  In `R/qtl` book, the MIM method is pointed out as a powerful approach. Given the time, we'll focus on the CIM method (the most popular in the literature).
+-  In ``R/qtl`` book, the MIM method is pointed out as a powerful approach. Given the time, we'll focus on the CIM method (the most popular in the literature).
 
 - Download the data set using this [link.](http://www.rqtl.org/sug.csv)
 
-- Permutation argument (`n.perm`) in the `cim` and `scanone` function performe a permutation test to get a significance threshold. Here, we are assuming a tiny number of permutation given the time. In a real analysis, you should increase it.
+- Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a tiny number of permutation given the time. In a real analysis, you should increase it.
 
-- QTL effects is an important information. In the  `R/qtl` book, the author pointed out: "The function for performing QTL mapping, `scanone`, does not provide estimated QTL effects. Such estimates are best obtained with the function `fitqtl()`, particularly for the case of a multiple-QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the [discussion group](https://groups.google.com/forum/#!searchin/rqtl-disc/CIM$20qtl$20effect|sort:relevance/rqtl-disc/rD8R66fxaMU/T4QsbYrWAwAJ). He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the `fitqtl()` function. Once you've decided on some set of QTL, use `makeqtl()` to create a `qtl object` and then `fitqtl()` with `get.ests=TRUE` to get estimated effects and estimated percent variance explained." **In this toy example, we will consider this alternative to get the QTL effects.**
+- QTL effects is an important information. In the  `R/qtl` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple-QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the [discussion group](https://groups.google.com/forum/#!searchin/rqtl-disc/CIM$20qtl$20effect|sort:relevance/rqtl-disc/rD8R66fxaMU/T4QsbYrWAwAJ). He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." **In this toy example, we will consider this alternative to get the QTL effects.**
 
 ```
 require('qtl')
