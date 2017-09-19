@@ -101,7 +101,7 @@ Below is presented the ``R/qtl`` codes discussed during the class. Some importan
 
 - In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". 
 
-- A solution to get this effects in the CIM analysis was proposed by Karl Broman at the [discussion group](https://groups.google.com/forum/#!searchin/rqtl-disc/CIM$20qtl$20effect|sort:relevance/rqtl-disc/rD8R66fxaMU/T4QsbYrWAwAJ). He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." 
+- A solution to get this effects in the CIM analysis was proposed by Karl Broman at the discussion group. He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." 
 
 
 
