@@ -99,13 +99,12 @@ Below is presented the ``R/qtl`` codes discussed during the class. Some importan
 
 - Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a tiny number of permutation given the time. In a real analysis, you should increase it.
 
-- In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". 
-
-- A solution to get this effects in the CIM analysis was proposed by Karl Broman at the discussion group. He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." 
+- QTL effects is an important information. In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the `R/qtl` discussion group. He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
 
 
 
 ```
+#######################   R CODES  #####################
 require('qtl')
 
 # 1) IMPORTING TYHE DATA
