@@ -40,15 +40,15 @@ the relative spacing that they still appear on the standard maps"
 
 ### Slides
 
-1. [Linkage mapping introduction](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_1.pdf)
+1. [Linkage mapping introduction](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_1.pdf)
 
-2. [Linkage mapping construction](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_3.pdf)
+2. [Linkage mapping construction](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_3.pdf)
 
-3. [Chi-squared test and a toy example of Mendelian segregation distortion ](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_2.pdf)
+3. [Chi-squared test and a toy example of Mendelian segregation distortion ](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_2.pdf)
 
-4. [LOD score, a toy example](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_5.pdf)
+4. [LOD score, a toy example](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_5.pdf)
 
-4. [Linkage phase and introduction to QTL mapping](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_6.pdf)
+4. [Linkage phase and introduction to QTL mapping](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_6.pdf)
 
 ## Onemap
 
@@ -58,7 +58,7 @@ The complete tutorial to build a linkage map for inbred-based populations (F2, R
 
 ### Partial project (by Ivone de Bem Oliveira)
 
-Files for the first project can be downloaded [here](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/linkage_mapping_exer.zip).
+Files for the first project can be downloaded [here](https://github.com/hos6236/hos6236.github.io/blob/master/classes/linkage_mapping_exer.zip).
 
 Description:
 
