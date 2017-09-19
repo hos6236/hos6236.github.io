@@ -24,7 +24,7 @@ Please, use this [link](https://cran.r-project.org/manuals.html) to get some R o
 
 ## Introduction to R (by Marcio Resende)
 
-Files for the hands-on R tutorial can be accessed in this [link](https://github.com/lfelipe-ferrao/lfelipe-ferrao.github.io/blob/master/classes/Hands-on.zip)
+Files for the hands-on R tutorial can be accessed in this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/Hands-on.zip)
 
 ### As a calculator
 
