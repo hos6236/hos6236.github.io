@@ -110,7 +110,7 @@ Below is presented the ``R/qtl`` codes discussed during the class. Some importan
 
 require('qtl') 	
 
-# 1) IMPORTING TYHE DATA
+# 1) IMPORTING THE DATA
 # -- Data from Sugiyama et al., Physiol Genomics 10:5–12, 2002.
 # -- Row 1: names of phenotypes + markers
 # -- Row 2: No. chromosomes (genetic map)
@@ -191,8 +191,8 @@ abline(h = summary(cim.perm)[1], lty = 2, col= "green") # threshold using permut
 
 # 5) QTL EFFECTS
 # -- Compare the results effects
-# -- Difference in the phenotype variation explained (?)
-# -- Difference in the effects and SE (?)
+# -- Estimated percent variance explained (?)
+# -- Difference in the estimated effects and SE (?)
 
 # IM method
 qtl.im = summary(IM.hk,threshold = summary(cim.perm)[1])
