@@ -48,6 +48,7 @@ genotypes at the marker, and compare the groups’ phenotype averages.
 3. Does not need a previous linkage genetic map.
 4. Can be applied to non-linked markers.
 5. Theoretical basis of the genome-wide association studies (GWAS).
+
 **Disadvantages:**
 1. Cannot inspect positions between markers.
 2. Poor information about QTL location.
@@ -60,6 +61,7 @@ IM method allows systematically go through the genome in search of QTLs. Statist
 **Advantages:**
 1. Inference about the QTL position.
 2. Increase of the statistical power.
+
 **Disadvantages:**
 1. Excludes effects of other QTLs for the tested region, so it can result in false positives (called "ghosts" QTL).
 2. Not use all genome information in the analyzes.
