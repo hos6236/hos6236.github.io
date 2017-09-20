@@ -102,7 +102,7 @@ Below is presented the ``R/qtl`` code discussed during the class. Some important
 
 - **The QTL effect is important information.** In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman in the `R/qtl` discussion group in a topic about "how obtain the QTL effects and other information in CIM analysis?". He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
 
-
+- In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) you can access the original paper.
 
 ```
 ############################    R CODES   ############################
@@ -211,16 +211,31 @@ summary(qtl.eff.cim)
 
 ```
 
+------------
 # Report
 
-The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method).The data set is the same as that we have used during the class. You can download it using the command:
+The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using the ``R`` command:
 
 ```
 sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
 ```
 
-During the lesson, we mapped QTLs to the ``bw`` phenotype. The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of these features to find QTLs.
+During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of them to perform the QTL analysis.
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
-The report should contain graphs and text that supports your findings. **One important point: there is not a right answer!** It is up to you to make decisions considering the number of covariates in the CIM model or the threshold used, for example. Just be careful to justify your decisions. Consider previous literature is always a good idea to support your decisions. You should cite them in the report.
+## Contents
+
+### Introduction (2pt)
+
+- An introduction about the importance to consider QTL mapping in plant breeding studies -300 to 600 words.
+
+### QTL mapping (6 pt)
+
+- A brief description about the objectives of the original paper and the data set considered (number of markers, population size, phenotype considered and other information) (2pt).
+
+- Describe the QTLs identified considering the methods: Single Marker Regression, Interval Mapping and Composite Interval Method.  Indicate the QTL position in the linkage group, their effects, and other relevant information. Use graphics to represent the results for each method (4 pts).
+
+### Conclusion (2 pt)
+
+- Interpret the results. You can highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or in this report.  
