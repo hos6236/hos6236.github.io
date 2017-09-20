@@ -31,21 +31,20 @@ title: QTL Mapping
 
 by ``Luis Felipe V. Ferrão``
 
- In this section, we pointed out four  QTL mapping methods implemented in the ``R/qtl`` package. They have been widely used in the last decade in animal, plant and human research.  Exception the Single Marker Analysis approach, all interval mapping methods require the prior establishment of a linkage genetic map (linking the concepts discussed in the last class about the importance of linkage mapping).
+ In this section, we pointed out four  QTL mapping methods implemented in the ``R/qtl`` package. They have been widely used in the last decade in animal, plant, and human research.  With the exception of the Single Marker Analysis approach, all interval mapping methods presented require the prior establishment of a linkage genetic map (linking the concepts discussed in the last class about the importance of linkage mapping).
 
- In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) is possible to access a short ``R/qtl`` tutorial created by Ivone de Bem Oliveira. If you want to get more in deep into this topic, be sure to access the material signed by **Karl Bromam**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there are further information.
+ In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) it is possible to access a short ``R/qtl`` tutorial created by Ivone de Bem Oliveira. If you want to learn more about this topic, be sure to access the material by **Karl Broman**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there is further information.
 
 Below, a brief report about the methods discussed in class.
 
 ### Single Marker Analysis
 
-The simplest method for the analysis of QTL mapping is to consider each marker individually, split the individuals into groups, according to their
-genotypes at the marker, and compare the groups’ phenotype averages.
+The simplest method for the analysis of QTLs is to consider each marker individually and independently from each other,  split the individuals into groups, according to their genotypes at the marker, and compare the groups’ phenotype averages.
 
 Advantages:
 1. The key advantage of marker regression is its simplicity: we just perform a t test or ANOVA at each marker.
 2. No special software is required (``lm`` function in R can be used).
-3. Does not need a previous linkage genetic map.
+3. Does not require a previous linkage genetic map.
 4. Can be applied to non-linked markers.
 5. Theoretical basis of the genome-wide association studies (GWAS).
 
@@ -56,24 +55,24 @@ Disadvantages:
 
 ### Standard (or Simple) Interval Mapping (IM)
 
-IM method allows systematically go through the genome in search of QTLs. Statistically, it is an extension of the analysis of each single marker, allowing analysis at intervals across the linkage groups. The computational and statistical implementation proposed by [Haley and Knott (1992)](http://www.nature.com/hdy/journal/v69/n4/abs/hdy1992131a.html?foxtrotcallback=true) and [Martinez and Curnow (1992)](https://link.springer.com/article/10.1007/BF00222330), at the same year, became popular in the literature since they described a fast approximation of the ordinary least square (OLS) method.
+The IM method allows systematically exploration of the genome in search of QTLs. Statistically, it is an extension of the analysis of each single marker, allowing analysis at intervals of markers across the linkage groups. The computational and statistical implementation proposed by [Haley and Knott (1992)](http://www.nature.com/hdy/journal/v69/n4/abs/hdy1992131a.html?foxtrotcallback=true) and [Martinez and Curnow (1992)](https://link.springer.com/article/10.1007/BF00222330), at the same year, became popular in the literature since they described a fast approximation of the ordinary least square (OLS) method.
 
 Advantages:
-1. Inference about the QTL position.
+1. Better inference about the QTL position.
 2. Increase of the statistical power.
 
 Disadvantages:
-1. Excludes effects of other QTLs for the tested region, so it can result in false positives (called "ghosts" QTL).
-2. Not use all genome information in the analyzes.
+1. Excludes effects of other QTLs linked to the region being tested, so it can result in false positives (called "ghosts" QTL).
+2. Does not use all the genome information in the analyzes simultaneously.
 
 ### Composite Interval Mapping (CIM)
 
- So far, it was presented only single-QTL models:  we hypothesized the presence of a single QTL in each position in the genome, one at a time, as the location of that QTL. The model can be improved including a nearby typed marker as a covariate in further analysis, in order to reduce the residual variation and so improve our ability to detect further QTL. Statistically, single regression models become multiple regression models, by the inclusion of other markers in the model as covariates. CIM the most popular QTL mapping approach and has been widely used in animal, plant and human research.
+ So far, all methods above search for single-QTL:  we hypothesized the presence of a single QTL in each position in the genome, one at a time. The model can be improved including a nearby marker as a covariate in further analysis, in order to reduce the residual variation and so improve our ability to detect QTL. Statistically, single regression models become multiple regression models, by the inclusion of other markers in the model as covariates. CIM is the most popular QTL mapping approach and has been widely used in animal, plant and human research.
 
  Advantages:
 
  1. Reduce residual variation and so give increased power to detect QTL.
- 2. use all genome information in the analysis.
+ 2. Uses all genome information in the analysis.
 
  Disadvantages:
 
@@ -81,9 +80,9 @@ Disadvantages:
 
 ### Multiple Interval Mapping (MIM)
 
-At this point, some comments are necessary. All previous methods have considered the follow question: "Is there a QTL here ?". For this, the first approach (single marker analysis) have considered  each marker individually, without a previous information about linkage groups. The IM method uses a similar regression model but considering prior linkage mapping information to fit the model. Finally, the CIM approach fitted a multiple regression model assuming other molecular markers as covariates in the regression model.
+At this point, some comments are necessary. All previous methods have considered the follow question: "Is there a QTL linked to this marker or interval?". For this, the first approach (single marker analysis) considered  each marker individually, without previous information about linkage groups. The IM method uses a similar regression model but considering prior linkage mapping information to fit the model. Finally, the CIM approach fitted a multiple regression model assuming other molecular markers as covariates in the regression model.
 
-An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method. Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ". Modern studies of QTL mapping have been based in this theory
+An alternative question is:“Are there QTL here and there?”. This is the idea behind of the MIM method. Briefly, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ". Modern studies of QTL mapping have been based in this theory
 
  Advantages:
 1. Combines high precision and statistical power
@@ -93,15 +92,15 @@ An alternative question is:“Are there QTL here and here?”. This is the idea 
 
 ### Demo (a toy example)
 
-Below is presented the ``R/qtl`` codes discussed during the class. Some important points:
+Below is presented the ``R/qtl`` code discussed during the class. Some important points:
 
--  MIM method was pointed out as a powerful approach. However, given the time, we'll focus on the CIM method in this class (the most popular in the literature). In the [Ivone's tutorial](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) and on the [Karl Broman's page](http://www.rqtl.org/) there are valious details about the MIM approach.  
+-  MIM method was pointed out as a powerful approach. However, given the short time during class, we'll focus on the CIM method, the most popular in the literature. In [Ivone's tutorial](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) and on the [Karl Broman's page](http://www.rqtl.org/) there are various details about the MIM approach.  
 
 - Data set used in this example can be downloaded using this [link](http://www.rqtl.org/sug.csv).
 
-- Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a small number of permutations given the time. In a real analysis, you must to increase it.
+- Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performs a permutation test to get a significance threshold to call markers linked to QTLs. Here, we are assuming a small number of permutations given the short time. In a real analysis, you run at least 1000 to determine the treshold. .
 
-- **QTL effects is an important information.** In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the `R/qtl` discussion group in a topic about "how obtain the QTL effects and other information in CIM analysis? ". He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
+- **The QTL effect is important information.** In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman in the `R/qtl` discussion group in a topic about "how obtain the QTL effects and other information in CIM analysis?". He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
 
 
 
@@ -212,9 +211,9 @@ summary(qtl.eff.cim)
 
 ```
 
-## Partial project
+# Report
 
-The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method).The data set is the same as that we have used during the class. You can download it using the command: 
+The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method).The data set is the same as that we have used during the class. You can download it using the command:
 
 ```
 sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
@@ -225,4 +224,3 @@ During the lesson, we mapped QTLs to the ``bw`` phenotype. The original data set
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
 The report should contain graphs and text that supports your findings. **One important point: there is not a right answer!** It is up to you to make decisions considering the number of covariates in the CIM model or the threshold used, for example. Just be careful to justify your decisions. Consider previous literature is always a good idea to support your decisions. You should cite them in the report.
-
