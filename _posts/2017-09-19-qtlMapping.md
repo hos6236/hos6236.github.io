@@ -214,10 +214,12 @@ summary(qtl.eff.cim)
 
 ## Partial project
 
-The main objective of the project is to find QTLs and compare the three methods cited in the class (Single Marker Regression, Interval Mapping and Composite Interval Method).
+The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method).The data set is the same as that we have used during the class. You can download it using the command: 
 
-The data set is the same as that we have used during the class. You can download it using the command: ``sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.During the lesson, we mapped QTLs to the `` bw`` phenotype. The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of these features to find QTLs.
+``sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
+
+During the lesson, we mapped QTLs to the `` bw`` phenotype. The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of these features to find QTLs.
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  `` R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
-The report should contain graphs and text that supports your findings. One important point: there is not a right answer! It is up to you to make decisions considering the number of covariates or the threshold used, for example. Just be careful to justify your decisions. Consider previous literature is always a good idea to support decisions. You can cite them in the report.
+The report should contain graphs and text that supports your findings. **One important point: there is not a right answer!** It is up to you to make decisions considering the number of covariates in the CIM model or the threshold used, for example. Just be careful to justify your decisions. Consider previous literature is always a good idea to support your decisions. You should cite them in the report.
