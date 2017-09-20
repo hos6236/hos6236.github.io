@@ -15,9 +15,8 @@ theme_settings:
      
      <p>MOLECULAR MARKER ASSISTED PLANT BREEDING</p>
      <p>This course provides theory, methods and procedures required to apply molecular information in plant breeding programs. The course will be based on lectures and multiple hands-on activities that apply what is learned.</p>
-     <p>Instructors - Patricio Munoz, Marcio Resende, Kevin Folta</p>
-     <p>Teaching	Assistants - Ivone de Bem Oliveira, Juliana Benevenuto, Luis Felipe Ferrao</p>
-     <p>Horticultural Sciences</p>
+     <p>Instructor - Patricio Munoz, Marcio Resende,Kevin Folta</p>
+     <p>Assistant - Ivone de Bem Oliveira</p>
      <p>University of Florida</p>
 
      
@@ -27,7 +26,7 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: #"lfelipe.ferrao@gmail.com"
+  email_address: "idebem.oliveira@ufl.edu"
   behance:
   bitbucket:
   dribbble:
