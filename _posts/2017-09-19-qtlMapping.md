@@ -216,7 +216,9 @@ summary(qtl.eff.cim)
 
 The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method).The data set is the same as that we have used during the class. You can download it using the command: 
 
-``sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
+```
+sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
+```
 
 During the lesson, we mapped QTLs to the `` bw`` phenotype. The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of these features to find QTLs.
 
