@@ -33,7 +33,7 @@ by ``Luis Felipe V. Ferrão``
 
  In this section, we pointed out four  QTL mapping methods implemented in the ``R/qtl`` package. They have been widely used in the last decade in animal, plant and human research.  Exception the Single Marker Analysis approach, all interval mapping methods require the prior establishment of a linkage genetic map (linking the concepts discussed in the last class about the importance of linkage mapping).
 
- In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) is possible to access a short ``R/qtl`` tutorial created by Ivone de Bem Oliveira. Please, use this material as a reference to guide you in the exercises. If you want to get more in deep into this topic, be sure to access the material signed by **Karl Bromam**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there are further information.
+ In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) is possible to access a short ``R/qtl`` tutorial created by Ivone de Bem Oliveira. If you want to get more in deep into this topic, be sure to access the material signed by **Karl Bromam**. He is an active researcher in this area and in this [link](http://www.rqtl.org/) it is possible to have information about complete tutorials, books and discussion groups on the subject. In the author's [github page](https://github.com/kbroman) there are further information.
 
 Below, a brief report about the methods discussed in class.
 
@@ -121,9 +121,7 @@ original.dataset = read.csv("/home/lfelipe/Dropbox/PosDoc_UF/HOS6236_MolecularMa
 original.dataset[1:10,1:10] #subset
 
 # Importing in the R/QTL package
-sug	<-	read.cross("csv",	"/home/lfelipe/Dropbox/PosDoc_UF/HOS6236_MolecularMarkersPlantaBreeding/qtl_toyExample/",
-                  "sug.csv", 	
-                  genotypes=c("CC",	"CB",	"BB"),	alleles=c("C",	"B"))
+sug	<-	read.cross("csv","/home/lfelipe/Dropbox/PosDoc_UF/HOS6236_MolecularMarkersPlantaBreeding/qtl_toyExample/","sug.csv",genotypes=c("CC",	"CB",	"BB"),	alleles=c("C",	"B"))
 summary(sug)
 plot(sug)
 
@@ -191,7 +189,7 @@ abline(h = summary(cim.perm)[1], lty = 2, col= "green") # threshold using permut
 
 # -------- ## -------- ## -------- #
 
-# 5) QTL EEFECTS
+# 5) QTL EFFECTS
 # -- Compare the results effects
 # -- Difference in the phenotype variation explained (?)
 # -- Difference in the effects and SE (?)
@@ -212,6 +210,14 @@ qtl.cim.make = makeqtl(hyper, chr = cov.position$chr,pos=cov.position$pos,what="
 qtl.eff.cim = fitqtl(hyper,qtl=qtl.cim.make,method="hk",get.ests=TRUE, dropone=FALSE)
 summary(qtl.eff.cim)
 
-
-
 ```
+
+## Partial project
+
+The main objective of the project is to find QTLs and compare the three methods cited in the class (Single Marker Regression, Interval Mapping and Composite Interval Method).
+
+The data set is the same as that we have used during the class. You can download it using the command: ``sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.During the lesson, we mapped QTLs to the `` bw`` phenotype. The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of these features to find QTLs.
+
+The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  `` R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
+
+The report should contain graphs and text that supports your findings. One important point: there is not a right answer! It is up to you to make decisions considering the number of covariates or the threshold used, for example. Just be careful to justify your decisions. Consider previous literature is always a good idea to support decisions. You can cite them in the report.
