@@ -212,7 +212,7 @@ summary(qtl.eff.cim)
 ```
 
 ------------
-# Report
+# QTL project
 
 The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using the ``R`` command:
 
@@ -220,7 +220,7 @@ The main objective of this project is to find QTLs and compare the three methods
 sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
 ```
 
-During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``). Please choose one of them to perform the QTL analysis.
+During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf).
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
@@ -232,10 +232,12 @@ The reason to consider this dataset is due to the amount of information availabl
 
 ### QTL mapping (6 pt)
 
-- A brief description about the objectives of the original paper and the data set considered (number of markers, population size, phenotype considered and other information) (2pt).
+- A brief description about the objectives of the [original paper](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) and the data set considered (number of markers, population size, phenotype considered and other information) (2pt).
 
 - Describe the QTLs identified considering the methods: Single Marker Regression, Interval Mapping and Composite Interval Method.  Indicate the QTL position in the linkage group, their effects, and other relevant information. Use graphics to represent the results for each method (4 pts).
 
 ### Conclusion (2 pt)
 
-- Interpret the results. You can highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or in this report.  
+- Interpret the results. You can highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or during the classes (1 pt).
+
+- In a plant breeding scenario. If you were a breeder and this example is a real breeding population, how would you propose to use QTL information? (1 pt)
