@@ -39,7 +39,7 @@ Below, a brief report about the methods discussed in class.
 
 ### Single Marker Analysis
 
-The simplest method for the analysis of QTL mapping data is to consider each marker individually, split the individuals into groups, according to their
+The simplest method for the analysis of QTL mapping is to consider each marker individually, split the individuals into groups, according to their
 genotypes at the marker, and compare the groups’ phenotype averages.
 
 Advantages:
@@ -56,7 +56,7 @@ Disadvantages:
 
 ### Standard (or Simple) Interval Mapping (IM)
 
-SIM method allows systematically go through the genome in search of QTLs. Statistically, it is an extension of the analysis of each single marker, allowing analysis at intervals. The computational and statistical implementation proposed by [Haley and Knott (1992)](http://www.nature.com/hdy/journal/v69/n4/abs/hdy1992131a.html?foxtrotcallback=true) and [Martinez and Curnow (1992)](https://link.springer.com/article/10.1007/BF00222330), at the same year, became popular in the literature since they described a fast approximation of the ordinary least square (OLS) method for mapping QTLs.
+IM method allows systematically go through the genome in search of QTLs. Statistically, it is an extension of the analysis of each single marker, allowing analysis at intervals across the linkage groups. The computational and statistical implementation proposed by [Haley and Knott (1992)](http://www.nature.com/hdy/journal/v69/n4/abs/hdy1992131a.html?foxtrotcallback=true) and [Martinez and Curnow (1992)](https://link.springer.com/article/10.1007/BF00222330), at the same year, became popular in the literature since they described a fast approximation of the ordinary least square (OLS) method.
 
 Advantages:
 1. Inference about the QTL position.
@@ -68,7 +68,7 @@ Disadvantages:
 
 ### Composite Interval Mapping (CIM)
 
- So far, it was presented only single-QTL models:  we hypothesized the presence of a single QTL in each position in the genome, one at a time, as the location of that QTL. The model can be improved including a nearby typed marker as a covariate in further analysis, in order to reduce the residual variation and so improve our ability to detect further QTL. Statistically, single regression models become multiple regression models, by the inclusion of other markers in the model as covariates. This is the most popular QTL mapping approach and it was widely used in animal, plant and human research.
+ So far, it was presented only single-QTL models:  we hypothesized the presence of a single QTL in each position in the genome, one at a time, as the location of that QTL. The model can be improved including a nearby typed marker as a covariate in further analysis, in order to reduce the residual variation and so improve our ability to detect further QTL. Statistically, single regression models become multiple regression models, by the inclusion of other markers in the model as covariates. CIM the most popular QTL mapping approach and has been widely used in animal, plant and human research.
 
  Advantages:
 
@@ -81,7 +81,9 @@ Disadvantages:
 
 ### Multiple Interval Mapping (MIM)
 
-All previous methods have considered the follow question: "Is there a QTL here ?". For this, single marker analysis considered  each marker individually, the SIM method considered a similar regression model but considering prior linkage mapping information and CIM approach fitted a multiple regression model assuming neighboring markers as covariates. An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method.Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ".
+At this point, some comments are necessary. All previous methods have considered the follow question: "Is there a QTL here ?". For this, the first approach (single marker analysis) have considered  each marker individually, without a previous information about linkage groups. The IM method uses a similar regression model but considering prior linkage mapping information to fit the model. Finally, the CIM approach fitted a multiple regression model assuming other molecular markers as covariates in the regression model.
+
+An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method. Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ". Modern studies of QTL mapping have been based in this theory
 
  Advantages:
 1. Combines high precision and statistical power
@@ -89,23 +91,24 @@ All previous methods have considered the follow question: "Is there a QTL here ?
 3. Better description of the genetic architecture of a quantitative trait.
 4. Estimate the number, position, effects and interaction between QTLs.
 
-### Toy example
+### Demo (a toy example)
 
 Below is presented the ``R/qtl`` codes discussed during the class. Some important points:
 
--  In ``R/qtl`` book, the MIM method is pointed out as a powerful approach. Given the time, we'll focus on the CIM method (the most popular in the literature).
+-  MIM method was pointed out as a powerful approach. However, given the time, we'll focus on the CIM method in this class (the most popular in the literature). In the [Ivone's tutorial](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) and on the [Karl Broman's page](http://www.rqtl.org/) there are valious details about the MIM approach.  
 
-- Download the data set using this [link.](http://www.rqtl.org/sug.csv)
+- Data set used in this example can be downloaded using this [link](http://www.rqtl.org/sug.csv).
 
-- Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a tiny number of permutation given the time. In a real analysis, you should increase it.
+- Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performe a permutation test to get a significance threshold. Here, we are assuming a small number of permutations given the time. In a real analysis, you must to increase it.
 
-- QTL effects is an important information. In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the `R/qtl` discussion group. He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
+- **QTL effects is an important information.** In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman at the `R/qtl` discussion group in a topic about "how obtain the QTL effects and other information in CIM analysis? ". He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
 
 
 
 ```
-#######################   R CODES  #####################
-require('qtl')
+############################    R CODES   ############################
+
+require('qtl') 	
 
 # 1) IMPORTING TYHE DATA
 # -- Data from Sugiyama et al., Physiol Genomics 10:5–12, 2002.
@@ -139,10 +142,14 @@ plot.pxg(sug, "D1MIT171")
 # 3) INTERVAL MAPPING
 # -- Simple linear regression,considering a grid of positions along the genome
 hyper = calc.genoprob(sug,step=1) # cond. prob
+
 IM.hk = scanone(hyper, pheno.col = 3, method = "hk") #Pheno=3 (bw trait)
-qtl.im = summary(IM.hk,threshold = 3) # QTL threshold > 3
+head(IM.hk) #LOD for each position of the linkage mapping ("sweeping the genome")
+qtl.im = summary(IM.hk,threshold = 2.5) # QTL threshold > 2.5 (naive threshold)
+qtl.im
+
 plot(IM.hk, col = "red", ylab = "LOD Score")
-abline(h = 3, lty = 2)
+abline(h = 2.5, lty = 2)
 
 # -------- ## -------- ## -------- #
 
@@ -151,32 +158,56 @@ abline(h = 3, lty = 2)
 # -- Markers as covariates (reduce residual variation and increase the power)
 set.seed(123)
 CIM = cim(hyper, pheno.col = 3, n.marcovar=5, window=20)
-qtl.cim = summary(CIM,threshold = 3)
-cov.position = attr(CIM, "marker.covar.pos") #covariates position
-plot(IM.hk, col = "blue", ylab = "LOD Score")
-abline(h = 3, lty = 2)
+head(CIM) #LOD for each position of the linkage mapping ("sweeping the genome")
+qtl.cim = summary(CIM,threshold = 2.5) # QTL threshold > 2.5 (naive threshold)
+qtl.cim
+
+plot(CIM, col = "blue", ylab = "LOD Score")
+abline(h = 2.5, lty = 2)
 
 # -------- ## -------- ## -------- #
 
-# 4) COMPARING IM x CIM | PERMUTATION
+# 4) COMPARING IM x CIM
+# -- Problems to use a naive threshold (?)
+# -- QTLs common across the methods (?)
+# -- QTLs different across the methods (?)
+# -- Difference in magnitude of the peaks (?)
+# -- Increase the window size or the number of covariates (?)
+# -- Is there a right answer (?)
+
 chr <- c(1:19)
 plot(IM.hk, CIM, chr = chr, col = c("blue", "red"), ylab = "LOD Score")
 add.cim.covar(CIM, chr = chr, col = "darkgreen")
-abline(h = 2, lty = 2, col="black") # naive threshold
-
-set.seed(123)
-cim.perm = cim(hyper, pheno.col = 3, n.marcovar=5, window=20,n.perm = 10)
-summary(cim.perm)
-abline(h = summary(cim.perm)[1], lty = 2) # threshold using permutation
+abline(h = 2.5, lty = 2, col="black") # naive threshold
 
 # -------- ## -------- ## -------- #
 
-# 5) QTL effect
-# -- Comparing the results
+# 5) PERMUTATION TEST
+# -- Let's be more formal (!)
+set.seed(123)
+cim.perm = cim(hyper, pheno.col = 3, n.marcovar=5, window=20,n.perm = 10)
+summary(cim.perm)
+abline(h = summary(cim.perm)[1], lty = 2, col= "green") # threshold using permutation
+
+# -------- ## -------- ## -------- #
+
+# 5) QTL EEFECTS
+# -- Compare the results effects
+# -- Difference in the phenotype variation explained (?)
+# -- Difference in the effects and SE (?)
+
+# IM method
+qtl.im = summary(IM.hk,threshold = summary(cim.perm)[1])
+qtl.im # selected QTL using the IM and permutation test
 qtl.im.make = makeqtl(hyper, chr = qtl.im$chr,pos=qtl.im$pos,what="prob")
 qtl.eff.im = fitqtl(hyper,qtl=qtl.im.make,method="hk",get.ests=TRUE, dropone=FALSE)
 summary(qtl.eff.im)
 
+# CIM method
+qtl.cim = summary(CIM,threshold = summary(cim.perm)[1])
+qtl.cim # selected QTL using the CIM and permutation test
+cov.position = attr(CIM, "marker.covar.pos")
+cov.position # covariates position
 qtl.cim.make = makeqtl(hyper, chr = cov.position$chr,pos=cov.position$pos,what="prob")
 qtl.eff.cim = fitqtl(hyper,qtl=qtl.cim.make,method="hk",get.ests=TRUE, dropone=FALSE)
 summary(qtl.eff.cim)
