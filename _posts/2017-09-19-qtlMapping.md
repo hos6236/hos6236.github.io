@@ -42,14 +42,14 @@ Below, a brief report about the methods discussed in class.
 The simplest method for the analysis of QTL mapping is to consider each marker individually, split the individuals into groups, according to their
 genotypes at the marker, and compare the groups’ phenotype averages.
 
-**Advantages:**
+Advantages:
 1. The key advantage of marker regression is its simplicity: we just perform a t test or ANOVA at each marker.
 2. No special software is required (``lm`` function in R can be used).
 3. Does not need a previous linkage genetic map.
 4. Can be applied to non-linked markers.
 5. Theoretical basis of the genome-wide association studies (GWAS).
 
-**Disadvantages:**
+Disadvantages:
 1. Cannot inspect positions between markers.
 2. Poor information about QTL location.
 3. Model single QTL, which does not allow for more complex models including epistasis or other interactions.
@@ -58,11 +58,11 @@ genotypes at the marker, and compare the groups’ phenotype averages.
 
 IM method allows systematically go through the genome in search of QTLs. Statistically, it is an extension of the analysis of each single marker, allowing analysis at intervals across the linkage groups. The computational and statistical implementation proposed by [Haley and Knott (1992)](http://www.nature.com/hdy/journal/v69/n4/abs/hdy1992131a.html?foxtrotcallback=true) and [Martinez and Curnow (1992)](https://link.springer.com/article/10.1007/BF00222330), at the same year, became popular in the literature since they described a fast approximation of the ordinary least square (OLS) method.
 
-**Advantages:**
+Advantages:
 1. Inference about the QTL position.
 2. Increase of the statistical power.
 
-**Disadvantages:**
+Disadvantages:
 1. Excludes effects of other QTLs for the tested region, so it can result in false positives (called "ghosts" QTL).
 2. Not use all genome information in the analyzes.
 
@@ -70,12 +70,11 @@ IM method allows systematically go through the genome in search of QTLs. Statist
 
  So far, it was presented only single-QTL models:  we hypothesized the presence of a single QTL in each position in the genome, one at a time, as the location of that QTL. The model can be improved including a nearby typed marker as a covariate in further analysis, in order to reduce the residual variation and so improve our ability to detect further QTL. Statistically, single regression models become multiple regression models, by the inclusion of other markers in the model as covariates. CIM the most popular QTL mapping approach and has been widely used in animal, plant and human research.
 
- **Advantages:**
-
+ Advantages:
  1. Reduce residual variation and so give increased power to detect QTL.
  2. use all genome information in the analysis.
 
- **Disadvantages:**
+ Disadvantages:
  1. Inefficient to model more complex scenarios considering interaction effects.
 
 ### Multiple Interval Mapping (MIM)
@@ -84,7 +83,7 @@ At this point, some comments are necessary. All previous methods have considered
 
 An alternative question is:“Are there QTL here and here?”. This is the idea behind of the MIM method. Simply stating, MIM is a method that simultaneously considers multiples QTLs. For this purpose, multiple procedures to compare and select models are necessary. As pointed out by K. Broman: "QTL mapping is best viewed as a model selection or variable selection problem: what set of loci (and QTL × QTL interactions) are best supported by the data? ". Modern studies of QTL mapping have been based in this theory
 
-**Advantages:**
+Advantages:
 1. Combines high precision and statistical power
 2. Inclusion of epistasis and other interactions sources in the model.
 3. Better description of the genetic architecture of a quantitative trait.
