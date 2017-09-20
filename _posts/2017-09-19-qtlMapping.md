@@ -220,7 +220,7 @@ The main objective of this project is to find QTLs and compare the three methods
 sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
 ```
 
-During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf).
+During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_4.pdf).
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
