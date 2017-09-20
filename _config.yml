@@ -27,7 +27,7 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: "lfelipe.ferrao@gmail.com"
+  email_address: #"lfelipe.ferrao@gmail.com"
   behance:
   bitbucket:
   dribbble:
