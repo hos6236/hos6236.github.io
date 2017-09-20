@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+url: "https://hos6236.github.io/" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -27,7 +27,7 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: "idebem.oliveira@ufl.edu"
+  email_address: #"idebem.oliveira@ufl.edu"
   behance:
   bitbucket:
   dribbble:
