@@ -17,12 +17,13 @@ theme_settings:
      <p>This course provides theory, methods and procedures required to apply molecular information in plant breeding programs. The course will be based on lectures and multiple hands-on activities that apply what is learned.</p>
      <p>Instructors - Patricio Munoz, Marcio Resende, Kevin Folta</p>
      <p>Assistants - Ivone de Bem Oliveira, Juliana Benevenuto, Luis Felipe Ferrao</p>
+     <p>Horticulture Science</p>
      <p>University of Florida</p>
 
      
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and page maintained by <a href="https://lfelipe-ferrao.github.io">lfelipe-ferrao</a>
 
   # Icons
   rss: false
@@ -32,7 +33,7 @@ theme_settings:
   dribbble:
   facebook:
   flickr:
-  github: "lfelipe-ferrao"
+  github: "hos6236"
   google_plus:
   instagram:
   linkedin:  # Full URL
