@@ -218,11 +218,9 @@ summary(qtl.eff.cim)
 
 The main objective of this project is to map QTLs comparing the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.csv).
 
-<<<<<<< HEAD
 During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other three phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf). If you intend to use the codes showed during the class, make sure to change the argument ``pheno.col=3`` in the ``scanone`` or ``cim`` functions. This argument controls the trait considered in the QTL analysis.
-=======
+
 During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_4.csv).
->>>>>>> 05dec8899cfda92802b08ec4972afb4bf9955dc1
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
