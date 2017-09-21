@@ -27,6 +27,8 @@ title: QTL Mapping
 
 1. [Introduction to QTL analysis.](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_1.pdf)
 
+2. [Permutation test and more about QTL analysis.](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_5.pdf)
+
 ## R/qtl package
 
 by ``Luis Felipe V. Ferrão``
@@ -96,13 +98,13 @@ Below is presented the ``R/qtl`` code discussed during the class. Some important
 
 -  MIM method was pointed out as a powerful approach. However, given the short time during class, we'll focus on the CIM method, the most popular in the literature. In [Ivone's tutorial](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) and on the [Karl Broman's page](http://www.rqtl.org/) there are various details about the MIM approach.  
 
-- Data set used in this example can be downloaded using this [link](http://www.rqtl.org/sug.csv).
+- [Data set used in this example](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.cvs).
 
 - Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performs a permutation test to get a significance threshold to call markers linked to QTLs. Here, we are assuming a small number of permutations given the short time. In a real analysis, you run at least 1000 to determine the treshold. .
 
 - **The QTL effect is important information.** In the  ``R/qtl`` book, the author pointed out: "The function for performing QTL mapping, ``scanone``, does not provide estimated QTL effects. Such estimates are best obtained with the function ``fitqtl()``, particularly for the case of a multiple QTL model". A solution to get this effects in the CIM analysis was proposed by Karl Broman in the `R/qtl` discussion group in a topic about "how obtain the QTL effects and other information in CIM analysis?". He pointed out:  "We don't have a way to get effect estimates or phenotypic variance explained except through the ``fitqtl()`` function. Once you've decided on some set of QTL, use ``makeqtl()`` to create a ``qtl object`` and then ``fitqtl()`` with ``get.ests=TRUE`` to get estimated effects and estimated percent variance explained." In this toy example, we will consider this alternative to get the QTL effects.
 
-- In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) you can access the original paper.
+- [Original paper.](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf)
 
 ```
 ############################    R CODES   ############################
@@ -214,13 +216,9 @@ summary(qtl.eff.cim)
 ------------
 # QTL project
 
-The main objective of this project is to find QTLs and compare the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using the ``R`` command:
+The main objective of this project is to map QTLs comparing the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.csv).
 
-```
-sug <- read.cross ("csv", "http://www.rqtl.org", "sug.csv", genotypes = c ("CC", "CB "," BB "), alleles = c (" C "," B "))``.
-```
-
-During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf).
+During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other three phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf). If you intend to use the codes showed during the class, make sure to change the argument ``pheno.col=3`` in the ``scanone`` or ``cim`` functions. This argument controls the trait considered in the QTL analysis.
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
