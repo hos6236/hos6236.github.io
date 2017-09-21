@@ -23,7 +23,7 @@ theme_settings:
      
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and page maintained by <a href="https://lfelipe-ferrao.github.io">lfelipe-ferrao</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and page maintained by <a href="https://github.com/lfelipe-ferrao">lfelipe-ferrao</a>
 
   # Icons
   rss: false
