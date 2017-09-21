@@ -216,7 +216,9 @@ summary(qtl.eff.cim)
 ------------
 # QTL project
 
-The main objective of this project is to map QTLs comparing the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.csv). In this link you can click the ``raw`` icon at the right corner, copy the data and save in .csv format. Another alternative is  use this function in your ``R`` console: ``sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))`` after install the ``R/qtl`` pakage. The ``read.cross``function is native to the ``R/qtl`` package and it is able to download the data directly from the website if the page is working. Please, try both methods.  
+The main objective of this project is to map QTLs comparing the three methods discussed during the class (Single Marker Regression, Interval Mapping and Composite Interval Method). The data set is the same as that we have used during the class. You can download it using this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.csv). In this link you can click the ``raw`` icon at the right corner, copy the data and save in .csv format. 
+
+Another alternative is  use this function in your ``R`` console: ``sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))`` after install the ``R/qtl`` pakage. The ``read.cross`` function is native to the ``R/qtl`` package and it is able to download the data directly from the website if the page is working. Please, try one of this methods.  
 
 During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other three phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf). If you intend to use the codes showed during the class, make sure to change the argument ``pheno.col=3`` in the ``scanone`` or ``cim`` functions. This argument controls the trait considered in the QTL analysis.
 
@@ -241,3 +243,5 @@ The reason to consider this dataset is due to the amount of information availabl
 - Interpret the results. You can highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or during the classes (1 pt).
 
 - In a plant breeding scenario. If you were a breeder and this example is a real breeding population, how would you propose to use QTL information? (1 pt)
+
+Luis Felipe V. Ferrão (lfelipe.ferrao@gmail.com)
