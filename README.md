@@ -3,9 +3,11 @@
 
 This page was created to host class notes and other activities related to the  MOLECULAR MARKER ASSISTED PLANT BREEDING course, Horticulture Science, University of Florida.
 
-**Instructors: ** Patricio Munoz, Marcio Resende, Kevin Folta
+**Instructors:** Patricio Munoz, Marcio Resende, Kevin Folta
 
 **Teacher Assistants:**  Ivone de Bem Oliveira, Juliana Benevenuto, Luis Felipe Ferrao
+
+Mantained by [lfelipe-ferrao](https://github.com/lfelipe-ferrao)
 
 # Topics
 
