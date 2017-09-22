@@ -98,7 +98,7 @@ Below is presented the ``R/qtl`` code discussed during the class. Some important
 
 -  MIM method was pointed out as a powerful approach. However, given the short time during class, we'll focus on the CIM method, the most popular in the literature. In [Ivone's tutorial](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_2.pdf) and on the [Karl Broman's page](http://www.rqtl.org/) there are various details about the MIM approach.  
 
-- [Data set used in this example](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.cvs).
+- [Data set used in this example](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_6.csv).
 
 - Permutation argument (``n.perm``) in the ``cim`` and ``scanone`` function performs a permutation test to get a significance threshold to call markers linked to QTLs. Here, we are assuming a small number of permutations given the short time. In a real analysis, you run at least 1000 to determine the treshold. .
 
