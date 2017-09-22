@@ -220,9 +220,7 @@ The main objective of this project is to map QTLs comparing the three methods di
 
 After install the ``R/qtl`` package, another alternative is to use the follow function in the ``R`` console: ``sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))`` . The ``read.cross`` function is from the ``R/qtl`` package and it is able to download the data directly from the website. This function can fail if the web page is not working.  
 
-During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other three phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf). If you intend to use the codes showed during the class, make sure to change the argument ``pheno.col=3`` in the ``scanone`` or ``cim`` functions. This argument controls the trait considered in the QTL analysis.
-
-During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  Please, access this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_4.csv).
+During the lesson, we mapped QTLs for the ``bw`` trait (it was not used in the original paper for QTL mapping puorposes). The original data set contains other three phenotypes (``hr``, ``bp`` and ``heart_wt``).  **Each student has been assigned a trait that should analyzed for his/her project.**  In this [link](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) you can see the trait assigned to you. If you intend to use the codes showed during the class, make sure to change the argument ``pheno.col=3`` in the ``scanone`` or ``cim`` functions. This argument controls the trait considered in the QTL analysis.
 
 The reason to consider this dataset is due to the amount of information available. This data set was extensively discussed in the literature and on the  ``R/qtl`` page there are good tutorials. You should take this information to familiarize yourself with the methods. Visit the ``R/qtl`` discussion group is always an important source of knowledge.
 
@@ -234,7 +232,7 @@ The reason to consider this dataset is due to the amount of information availabl
 
 ### QTL mapping (6 pt)
 
-- A brief description about the objectives of the [original paper](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) and the data set considered (number of markers, population size, phenotype considered and other information) (2pt).
+- A brief description about the objectives of the [original paper](https://github.com/hos6236/hos6236.github.io/blob/master/classes/QTLmapping_3.pdf) and the data set considered (number of markers, population size and type, phenotype considered and other information) (2pt).
 
 - Describe the QTLs identified considering the methods: Single Marker Regression, Interval Mapping and Composite Interval Method.  Indicate the QTL position in the linkage group, their effects, and other relevant information. Use graphics to represent the results for each method (4 pts).
 
