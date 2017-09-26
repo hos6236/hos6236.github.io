@@ -20,3 +20,5 @@ Mantained by [lfelipe-ferrao](https://github.com/lfelipe-ferrao)
 4. [Linkage Mapping](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-09-01-GeneticMapping.md)
 
 5. [QTL Mapping](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-09-19-qtlMapping.md)
+
+6. [Genome Wide Association Studies (GWAS)](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-09-26-GWAS.md)
