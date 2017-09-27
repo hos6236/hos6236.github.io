@@ -240,7 +240,7 @@ The reason to consider this dataset is due to the amount of information availabl
 
 ### Conclusion (2 pt)
 
-- Interpret the results. You can highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or during the classes (1 pt).
+- Interpret the results. You should focus your results on the interpretation of the estimated additive effects, which was discussed during the class. In addition, you should highlight differences and similarities across the methods and compare your results with the findings observed in the original paper. Finally, you can use this section to discuss alternative methods not reported in the original paper or during the classes (1 pt).
 
 - In a plant breeding scenario. If you were a breeder and this example is a real breeding population, how would you propose to use QTL information? (1 pt)
 
