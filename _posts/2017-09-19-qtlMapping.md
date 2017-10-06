@@ -245,3 +245,15 @@ The reason to consider this dataset is due to the amount of information availabl
 - In a plant breeding scenario. If you were a breeder and this example is a real breeding population, how would you propose to use QTL information? (1 pt)
 
 Luis Felipe V. Ferrão (lfelipe.ferrao@gmail.com)
+
+## Feedback
+
+The following comment is our general feedback considering all the reports:
+
+1. Writing style: Many students used informal concepts/terms. Many students did not use bibliographic references to support their methods, parameters or discussion. Additionally, the number of words for the Introduction section was not followed in many reports. Reports should be formal and follow rules that applied to scientific writing.
+
+2. Permutation test: During the class, the importance of being formal in setting the threshold was reinforced. The permutation test was highlighted as an important method for this purpose. During the hands-on, small samples were considered given the short time of the class. However, we highlighted the importance of increasing the number of iteration. We even recommended to do 1000 in the report and also in real data analysis. Many students considered a small number of permutations (only 10 !!). On the other hand, some students chose to use a predefined threshold, such as LOD = 3. There is no problem in using a predefine a value based on previous literature, however, it is important to cite the references that have supported your decision.
+
+3. Result description: in a typical QTL study, in general, some results must be pointed out in the results and discussion section. These generally include, position of QTLs, the number of QTLs, the estimated effects (dominance, additive or others), and phenotypic variance explained. As a good example, all of these points are provided in the original paper. Many students recognized the importance of this information in the Introduction section, however, they omitted it in the discussion section.
+
+
