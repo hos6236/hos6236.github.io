@@ -1,7 +1,7 @@
 
 # HOS 6236 - Molecular Marker Assisted Plant Breeding
 
-This page was created to host class notes and other activities related to the  MOLECULAR MARKER ASSISTED PLANT BREEDING course, Horticulture Science, University of Florida.
+This page was created to host class notes and other activities related to the  MOLECULAR MARKER ASSISTED PLANT BREEDING course, Horticultural Science Departament, University of Florida.
 
 **Instructors:** Patricio Munoz, Marcio Resende, Kevin Folta
 
