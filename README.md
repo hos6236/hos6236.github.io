@@ -24,3 +24,5 @@ Mantained by [lfelipe-ferrao](https://github.com/lfelipe-ferrao)
 6. [Genome Wide Association Studies (GWAS)](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-09-26-GWAS.md)
 
 7. [Genomic Selection (GS)](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-10-17-GS.md)
+
+8. [Gene Editing](https://github.com/hos6236/hos6236.github.io/blob/master/_posts/2017-12-05-Genetic_Engineering_in_Breeding.md)
